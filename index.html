@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MapDashboard</title>
+	<!-- 下面link为支持三维场景所用 -->
+	<link rel="stylesheet" href="./static/libs/Cesium/Widgets/widgets.css" />
+    <!-- 下面link为支持ol出图所用 -->
+    <link rel="stylesheet" href="./static/libs/webMap/ol.css" />
+    <link rel="stylesheet" href="./static/libs/webMap/iclient9-openlayers.min.css" />
+
+    <!-- 下面所有为支持ol出图所用 -->
+    <script type="text/javascript" src="./static/libs/webMap/ol.js"></script>
+    <script type="text/javascript" src="./static/libs/webMap/iclient9-openlayers.min.js"></script>
+    <script type="text/javascript" src="./static/libs/webMap/geostats.js"></script>
+    <script type="text/javascript" src="./static/libs/webMap/jsonsql.js"></script>
+    <script type="text/javascript" src="./static/libs/webMap/canvg.min.js"></script>
+    <script type="text/javascript" src="./static/libs/webMap/RangeSlider.js"></script>
+
+	<!-- 以下为场景所需 -->
+	<script type="text/javascript" src="./static/libs/Cesium/Workers/zlib.min.js"></script>
+	<script type="text/javascript" src="./static/libs/Cesium/Cesium.js"></script>
+
+    <script>
+        // 如果是IE浏览器，引入es6垫片库，实现兼容ie9及以上版本；IE浏览器不支持es6，但是国际化库使用了es6
+        //    if(typeof Promise!=="function"){
+        //      //document.write('<script src="https://f.alicdn.com/es6-shim/0.35.1/??es6-shim.min.js,es6-sham.min.js"><\/script>');
+        //      document.write('<script src="../libs/es6-shim.min.js"><\/script>');
+        //      document.write('<script src="../libs/es6-sham.min.js"><\/script>');
+        //    }
+        window.MD = {}; // 以后所有的全局变量 请全部挂载在MD 对象下面！
+        //选择国际化的语言，根据需求自己本地进行 开启关闭
+        window.lang = "zh-CN"; // body ID Chinese
+        window.MD.userRole = "ADMIN";  //管理角色为ADMIN 普通用户为USER  游客为VIEWER
+        window.MD.userName = "";
+        window.MD.userState = "READWRITE"; // 默认进来的角色拥有edit的权限
+        // window.lang="en-US";   // body ID English
+        document.write("<script type='text/javascript' src='./static/nls/" + window.lang + ".js'><\/script>");
+    </script>
+</head>
+
+<body class="blackTheme" id="Chinese" style="margin:0; background:#fff;width: 100%;height:100vh;overflow-y: auto;">
+    <div id="app"></div>
+</body>
+
+</html>

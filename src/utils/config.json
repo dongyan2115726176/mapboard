@@ -1,0 +1,61 @@
+{
+	"thumbnail": null, 
+	"visitCount": 0,
+	"createTime": "",
+	"name": "MapDashboard",
+	"nickname": "admin",
+	"authorizeSetting": [
+		{
+			"permissionType": "DELETE",
+			"entityRoles": [
+			  "ADMIN",
+			  "SYSTEM"
+			],
+			"entityType": "USER",
+			"entityId": null
+		},
+		{
+			"permissionType": "SEARCH",
+			"aliasName": "GUEST",
+			"entityRoles": null,
+			"entityType": "USER",
+			"entityName": "GUEST",
+			"entityId": null
+		}
+	],
+	"description": "", 
+	"updateTime": "",
+	"id": "",
+	"userName": "new024532",
+	"tags": [], 
+	"content": {
+		"baseSetting": {
+			"width":"1920px",
+			"height":"1080px",
+			"themeId": "themeA",
+			"themeColor":"blackTheme",
+			"fillType": "color",
+			"background": "#2A2E34",
+			"widgetBackground":"rgba(0,0,0,0.8)"
+		},
+		"dataList": [
+			{
+				"label":"671气象站.csv",
+				"value":"http://192.168.13.116:8090/iportal/web/datas/1587510698/content.json",
+				"type":"CSV",
+				"dataId":1587510698,
+				"dataSource":"data"
+			},
+			{
+				"label":"671气象站2.csv",
+				"value":"http://192.168.13.116:8090/iportal/web/datas/2028832567/content.json",
+				"type":"CSV",
+				"dataId":2028832567,
+				"dataSource":"data"
+			}
+		],
+		"components": [
+        ]
+	}
+	
+}

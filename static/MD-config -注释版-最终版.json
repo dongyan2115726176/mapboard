@@ -1,0 +1,83 @@
+{
+	"thumbnail": null,  //资源属性： 资源缩略图
+	"visitCount": 2,  //资源属性： 访问次数，后端控制，无需前端生成
+	"createTime": 1534232069259,  //资源属性： 创建时间  后端控制，无需前端生成
+	"name": "MapDashboard",  //资源属性： 资源名称
+	"nickname": "admin",   //资源属性： 资源创建者昵称,后端控制，无需前端生成
+	"authorizeSetting": [   //资源属性：权限设置相关，暂时默认公开
+		{
+		  "permissionType": "DELETE",
+		  "aliasName": "admin",
+		  "entityRoles": null,
+		  "entityType": "USER",
+		  "entityName": "admin",
+		  "entityId": null
+		},
+		{
+		  "permissionType": "READ",
+		  "aliasName": "GUEST",
+		  "entityRoles": null,
+		  "entityType": "USER",
+		  "entityName": "GUEST",
+		  "entityId": null
+		}
+	],
+	"description": "",  //资源属性： 描述信息
+	"updateTime": 1534232069259,  //资源属性： 更新时间 后端控制，无需前端生成
+	"id": 425951119,   //资源ID  后端控制，无需前端生成
+	"userName": "admin",  //资源属性，制作者账户名  后端控制，无需前端生成
+	"tags":[],  //资源属性，标签- 预留，这个是必填项，如果用户没填，就默认填一个“地图大屏”
+	"content":{   //大屏的具体内容
+		"baseSetting":{  //大屏属性： 主题，大屏背景填充色/大屏背景填充图片，大屏宽高比例
+			"theme": "Black",
+			"img": "http://rdc.ispeco.com/web/datas/352138640",
+			"fillColor":"red",
+			"w": "16",
+			"h": "9"
+		},
+		"dataList": [{"label":"数据1","value":"15"}],   //大屏组件列表
+		"components":[   //大屏组件属性
+			{
+				"type": "Map",   //组件类型， 共有：地图，图表，指标，文本，其他  五种类型的组件
+				"level":5,   //组件层级高度，组件在大屏上的高度层级，高度高的组件会叠加在高度低的组件上面
+                "titile": "示例地图", // 组件title ， 组件标题， 用于左侧组件列表的展示
+				"center":[105.39,38.24],  //地图组件的中心点
+				"mapId": 128,    //地图ID， 主要用于出图，获取地图属性信息
+				"mapUrl":"http://www.supermapol.com",   //地图URL，主要用于出图，获取地图属性信息
+				"style":{   //组件样式属性，用于组件定位，以及组件大小控制
+					"top": "27px",
+					"right": "417px",
+					"width": "300px",
+					"height": "200px"
+				},
+				"control": ["legend","scale"]  //地图组件的控件列表
+			},
+			{
+				"type": "Text",    //组件类型： 文本类型
+				"title":"大屏展示系统",   // 文本内容 && 组件title ， 组件标题， 用于左侧组件列表的展示
+				"fontSize":"13px", //组件属性：字体大小
+				"color":"#3eb0e7",  //组件属性：字体颜色
+				"style": {   //组件样式属性，用于组件定位，以及组件大小控制
+					"left": "14px",
+					"bottom": "147px",
+					"width": "200px",
+					"height": "100px"
+				}
+			},
+			{
+				"type": "Indicator",   //组件类型，指标组件
+				"title": "指标标题",  // 指标标题内容，&& 组件title ， 组件标题， 用于左侧组件列表的展示
+				"num":"统计数值",
+				"unit": "单位",   //组件属性：指标单位
+				"fontSize": "24px",
+				"fontColor": "#3eb0e7",
+				"style":{
+					"bottom":"147px",
+					"left":"234px",
+					"width":"300px",
+					"height":"100px"
+				}
+			}
+		]
+	}
+}

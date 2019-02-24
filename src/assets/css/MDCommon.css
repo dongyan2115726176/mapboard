@@ -1,0 +1,48 @@
+/*通配 */
+body {
+    font-family: "Microsoft YaHei ",sans-serif !important;
+    font-size: 12px;
+    color: #353535;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body,h1,h2,h3,h4,h5,h6,ul,li,p,input,div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ol,ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline:none !important;
+}
+/*字体类*/
+.f13 {
+    font-size: 13px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+/*文字超出隐藏的样式*/
+.text-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+/* 英文下的特殊处理*/
+#English .f14 {
+    font-size: 12px;
+}
+#English .f16 {
+    font-size: 14px;
+}

@@ -1,0 +1,1564 @@
+{
+    "components": [
+        {
+            "center": [
+                116.31088256835938,
+                39.85633850097656
+            ],
+            "icon": "md-icon-map-widget",
+            "index": 0,
+            "id": 0,
+            "zoom": 11,
+            "type": "Map",
+            "title": "城市大屏道路图",
+            "fullScreen": true,
+            "scaleLine": false,
+            "nls": "map",
+            "mapUrl": "http://iptl.supermap.io",
+            "mapId": 2003972507,
+            "style": {
+                "top": "0px",
+                "left": "0px",
+                "bottom": "",
+                "width": "1920px",
+                "right": "",
+                "height": "1080px"
+            },
+            "overviewMap": false
+        },
+		{
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 1,
+            "id": 1,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "城市出行监控大屏",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "34px",
+            "style": {
+                "top": "29px",
+                "left": "30px",
+                "width": "468px",
+                "height": "62px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "textAlign": "center",
+            "icon": "md-icon-time",
+            "index": 2,
+            "id": 2,
+            "widgetFile": "text/Time",
+            "type": "Text",
+            "title": "实时时间",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "time",
+            "param": {
+                "timeType": "data+second",
+                "fontStyle": {
+                    "fontFamily": "Microsoft YaHei",
+                    "color": "#ffffff",
+                    "fontSize": "18px",
+                    "fontWeight": "normal"
+                }
+            },
+            "style": {
+                "top": "91px",
+                "left": "30px",
+                "width": "468px",
+                "height": "50px"
+            },
+            "settingFile": "text/Time",
+            "fontWeight": "normal"
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 3,
+            "id": 3,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "470px",
+                "left": "265px",
+                "width": "232px",
+                "height": "222px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "类型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "city-annular",
+                "legendPosition": "close",
+                "YAxisField": "状态值",
+                "autoPlay": false,
+                "dataSource": "data",
+                "url": "../../../utils/template/data/city-annular.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "汽车A",
+                        "汽车B",
+                        "汽车C",
+                        "汽车D",
+                        "汽车E"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "汽车A",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车B",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车C",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车D",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车E",
+                                "value": "20"
+                            }
+                        ],
+                        "name": "city-annular",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 4,
+            "id": 4,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "469px",
+                "left": "30px",
+                "width": "236px",
+                "height": "222px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "类型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "city-annular",
+                "legendPosition": "close",
+                "YAxisField": "状态值",
+                "autoPlay": false,
+                "dataSource": "data",
+                "url": "../../../utils/template/data/city-annular.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "汽车A",
+                        "汽车B",
+                        "汽车C",
+                        "汽车D",
+                        "汽车E"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "汽车A",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车B",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车C",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车D",
+                                "value": "20"
+                            },
+                            {
+                                "name": "汽车E",
+                                "value": "20"
+                            }
+                        ],
+                        "name": "city-annular",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "left",
+            "icon": "md-icon-title",
+            "index": 5,
+            "id": 5,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "汽车类型占比",
+            "textIndent": "10px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "420px",
+                "left": "30px",
+                "width": "468px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "bar",
+            "icon": "md-icon-bar",
+            "chartType": "bar",
+            "index": 6,
+            "id": 6,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "769px",
+                "left": "1416px",
+                "width": "474px",
+                "height": "296px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "车型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "city-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "里程",
+                    "油耗"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/city-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "汽车A",
+                        "汽车B",
+                        "汽车C",
+                        "汽车D",
+                        "汽车E"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "里程",
+                        "油耗"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "90",
+                            "70",
+                            "85",
+                            "60",
+                            "45"
+                        ],
+                        "name": "里程",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "bar"
+                    },
+                    {
+                        "data": [
+                            "150",
+                            "290",
+                            "240",
+                            "159",
+                            "99"
+                        ],
+                        "name": "油耗",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "bar",
+            "icon": "md-icon-bar",
+            "chartType": "bar",
+            "index": 7,
+            "id": 7,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "768px",
+                "left": "510px",
+                "width": "509px",
+                "height": "303px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "车型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "city-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "油耗",
+                    "里程"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/city-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "汽车A",
+                        "汽车B",
+                        "汽车C",
+                        "汽车D",
+                        "汽车E"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "油耗",
+                        "里程"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "150",
+                            "290",
+                            "240",
+                            "159",
+                            "99"
+                        ],
+                        "name": "油耗",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "bar"
+                    },
+                    {
+                        "data": [
+                            "90",
+                            "70",
+                            "85",
+                            "60",
+                            "45"
+                        ],
+                        "name": "里程",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 8,
+            "id": 8,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "768px",
+                "left": "1037px",
+                "width": "364px",
+                "height": "301px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "X1",
+                "agent": true,
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示范数据",
+                "id": "chartDemo",
+                "legendPosition": "close",
+                "YAxisField": "Y1",
+                "autoPlay": false,
+                "url": "../../../utils/chart_demo.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "Mon",
+                                "value": "100"
+                            },
+                            {
+                                "name": "Tue",
+                                "value": "520"
+                            },
+                            {
+                                "name": "Wed",
+                                "value": "2000"
+                            },
+                            {
+                                "name": "Thu",
+                                "value": "3340"
+                            },
+                            {
+                                "name": "Fri",
+                                "value": "3900"
+                            },
+                            {
+                                "name": "Sat",
+                                "value": "3300"
+                            },
+                            {
+                                "name": "Sun",
+                                "value": "2500"
+                            }
+                        ],
+                        "name": "示范数据",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#FF9789",
+                "title": "#770000",
+                "body": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ]
+            },
+            "nls": "line",
+            "icon": "md-icon-line",
+            "chartType": "line",
+            "index": 9,
+            "id": 9,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "769px",
+                "left": "30px",
+                "width": "468px",
+                "height": "298px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "车型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "city-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "油耗",
+                    "里程"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/city-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "汽车A",
+                        "汽车B",
+                        "汽车C",
+                        "汽车D",
+                        "汽车E"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category",
+                    "boundaryGap": false
+                },
+                "color": [
+                    "#F05940",
+                    "#BE3144",
+                    "#882241",
+                    "#770000",
+                    "#FF8418"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "油耗",
+                        "里程"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "150",
+                            "290",
+                            "240",
+                            "159",
+                            "99"
+                        ],
+                        "name": "油耗",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "line"
+                    },
+                    {
+                        "data": [
+                            "90",
+                            "70",
+                            "85",
+                            "60",
+                            "45"
+                        ],
+                        "name": "里程",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#FF9789"
+                            }
+                        },
+                        "type": "line"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0.4)"
+                        },
+                        "type": "line"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 10,
+            "id": 10,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "车辆统计占比",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "718px",
+                "left": "1037px",
+                "width": "364px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 11,
+            "id": 11,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "车辆统计",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "718px",
+                "left": "510px",
+                "width": "509px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 12,
+            "id": 12,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "车流量趋势",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "719px",
+                "left": "30px",
+                "width": "468px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 13,
+            "id": 13,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "车辆数据",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "719px",
+                "left": "1416px",
+                "width": "474px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "agent": true,
+            "num": "12452",
+            "icon": "md-icon-indicator",
+            "index": 14,
+            "id": 14,
+            "type": "Indicator",
+            "title": "道路汽车总量",
+            "url": "",
+            "frequency": 60,
+            "unit": "辆",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "290px",
+                "left": "28px",
+                "width": "248px",
+                "height": "113px"
+            },
+            "dataSource": "static",
+            "fontColor": "rgba(255, 132, 24, 100)"
+        },
+        {
+            "agent": true,
+            "num": "12345678",
+            "icon": "md-icon-indicator",
+            "index": 15,
+            "id": 15,
+            "type": "Indicator",
+            "title": "地铁出行人数",
+            "url": "",
+            "frequency": 60,
+            "unit": "人次",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "167px",
+                "left": "29px",
+                "width": "248px",
+                "height": "108px"
+            },
+            "dataSource": "static",
+            "fontColor": "rgba(255, 132, 24, 100)"
+        },
+        {
+            "agent": true,
+            "num": "24215",
+            "icon": "md-icon-indicator",
+            "index": 16,
+            "id": 16,
+            "type": "Indicator",
+            "title": "公共汽车人数",
+            "url": "",
+            "frequency": 60,
+            "unit": "人/时",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "291px",
+                "left": "285px",
+                "width": "212px",
+                "height": "111px"
+            },
+            "dataSource": "static",
+            "fontColor": "rgba(255, 132, 24, 100)"
+        },
+        {
+            "agent": true,
+            "num": "35",
+            "icon": "md-icon-indicator",
+            "index": 17,
+            "id": 17,
+            "type": "Indicator",
+            "title": "事故数",
+            "url": "",
+            "frequency": 60,
+            "unit": "次/时",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "167px",
+                "left": "284px",
+                "width": "214px",
+                "height": "107px"
+            },
+            "dataSource": "static",
+            "fontColor": "rgba(255, 132, 24, 100)"
+        }
+    ],
+    "baseSetting": {
+        "themeColor": "blackTheme",
+        "fillType": "color",
+        "background": "#2A2E34",
+        "width": "1920px",
+        "themeId": "themeA",
+        "height": "1080px"
+    },
+    "dataList": []
+}

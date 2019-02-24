@@ -1,0 +1,73 @@
+.vdr {
+  touch-action: none;
+  position: absolute;
+  box-sizing: border-box;
+}
+.handle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #EEE;
+  border: 1px solid #333;
+  transition: all 0.3s ease 0s;
+}
+.handle:hover {
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease 0s;
+}
+.handle-tl {
+  top: -3px;
+  left: -3px;
+  cursor: nw-resize;
+}
+.handle-tm {
+  top: -3px;
+  left: 50%;
+  margin-left: -5px;
+  cursor: n-resize;
+}
+.handle-tr {
+  top: -3px;
+  right: -3px;
+  cursor: ne-resize;
+}
+.handle-ml {
+  top: 50%;
+  margin-top: -5px;
+  left: -3px;
+  cursor: w-resize;
+}
+.handle-mr {
+  top: 50%;
+  margin-top: -5px;
+  right: -3px;
+  cursor: e-resize;
+}
+.handle-bl {
+  bottom: -3px;
+  left: -3px;
+  cursor: sw-resize;
+}
+.handle-bm {
+  bottom: -3px;
+  left: 50%;
+  margin-left: -5px;
+  cursor: s-resize;
+}
+.handle-br {
+  bottom: -3px;
+  right: -3px;
+  cursor: se-resize;
+}
+@media only screen and (max-width: 768px) {
+  [class*="handle-"]:before {
+    content: '';
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    top: -10px;
+    position: absolute;
+  }
+}

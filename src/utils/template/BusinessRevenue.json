@@ -1,0 +1,2129 @@
+{
+    "components": [
+        {
+            "center": [
+                11026499.9523064,
+                4803914.35366676
+            ],
+            "icon": "md-icon-map-widget",
+            "index": 0,
+            "id":0,
+            "zoom": 4,
+            "type": "Map",
+            "title": "企业实时销售数据",
+            "fullScreen": false,
+            "scaleLine": false,
+            "nls": "map",
+            "mapUrl": "http://iptl.supermap.io",
+            "mapId": 230058143,
+            "style": {
+                "top": "80px",
+                "left": "16px",
+                "width": "1067px",
+                "height": "784px"
+            },
+            "overviewMap": false
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 1,
+            "id":1,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "企业实时销售大屏",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "35px",
+            "style": {
+                "top": "0px",
+                "left": "664px",
+                "width": "623px",
+                "height": "64px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "textAlign": "center",
+            "icon": "md-icon-time",
+            "index": 2,
+            "id":2,
+            "widgetFile": "text/Time",
+            "type": "Text",
+            "title": "实时时间",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "time",
+            "param": {
+                "timeType": "data+second",
+                "fontStyle": {
+                    "fontFamily": "Microsoft YaHei",
+                    "color": "#ffffff",
+                    "fontSize": "18px",
+                    "fontWeight": "normal"
+                }
+            },
+            "style": {
+                "top": "0px",
+                "left": "1603px",
+                "width": "317px",
+                "height": "62px"
+            },
+            "settingFile": "text/Time",
+            "fontWeight": "normal"
+        },
+        {
+            "agent": true,
+            "num": "+90%",
+            "icon": "md-icon-indicator",
+            "index": 3,
+            "id":3,
+            "type": "Indicator",
+            "title": "同比增长",
+            "url": "",
+            "frequency": 60,
+            "unit": "",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "181px",
+                "left": "17px",
+                "width": "300px",
+                "height": "100px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "agent": true,
+            "num": "123456789",
+            "icon": "md-icon-indicator",
+            "index": 4,
+            "id":4,
+            "type": "Indicator",
+            "title": "销售总额",
+            "url": "",
+            "frequency": 60,
+            "unit": "元",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "79px",
+                "left": "17px",
+                "width": "300px",
+                "height": "100px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 5,
+            "id":5,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "533px",
+                "left": "1636px",
+                "width": "261px",
+                "height": "325px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "客户行业类型",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "com-annular",
+                "legendPosition": "close",
+                "YAxisField": "进度值",
+                "autoPlay": true,
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-annular.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "TYPE_1",
+                        "TYPE_2",
+                        "TYPE_3",
+                        "TYPE_4",
+                        "TYPE_5"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "TYPE_1",
+                                "value": "20"
+                            },
+                            {
+                                "name": "TYPE_2",
+                                "value": "20"
+                            },
+                            {
+                                "name": "TYPE_3",
+                                "value": "23"
+                            },
+                            {
+                                "name": "TYPE_4",
+                                "value": "20"
+                            },
+                            {
+                                "name": "TYPE_5",
+                                "value": "17"
+                            }
+                        ],
+                        "name": "com-annular",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 6,
+            "id":6,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "536px",
+                "left": "1372px",
+                "width": "252px",
+                "height": "320px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "销售品类",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "com-annular",
+                "legendPosition": "close",
+                "YAxisField": "进度值",
+                "autoPlay": true,
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-annular.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "母婴",
+                        "家电",
+                        "美妆",
+                        "家居",
+                        "其他"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "母婴",
+                                "value": "20"
+                            },
+                            {
+                                "name": "家电",
+                                "value": "20"
+                            },
+                            {
+                                "name": "美妆",
+                                "value": "23"
+                            },
+                            {
+                                "name": "家居",
+                                "value": "20"
+                            },
+                            {
+                                "name": "其他",
+                                "value": "17"
+                            }
+                        ],
+                        "name": "com-annular",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "annular",
+            "icon": "md-icon-annular",
+            "chartType": "annular",
+            "index": 7,
+            "id":7,
+            "widgetFile": "charts/Pie",
+            "style": {
+                "top": "132px",
+                "left": "1096px",
+                "width": "262px",
+                "height": "210px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Pie",
+            "chartParam": {
+                "xAxisField": "进度",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "com-annular",
+                "legendPosition": "close",
+                "YAxisField": "进度值",
+                "autoPlay": true,
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-annular.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": false,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri",
+                        "Sat",
+                        "Sun"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": false,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "已完成",
+                        "已完成",
+                        "已完成",
+                        "已完成",
+                        "待完成"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            {
+                                "name": "已完成",
+                                "value": "20"
+                            },
+                            {
+                                "name": "已完成",
+                                "value": "20"
+                            },
+                            {
+                                "name": "已完成",
+                                "value": "23"
+                            },
+                            {
+                                "name": "已完成",
+                                "value": "20"
+                            },
+                            {
+                                "name": "待完成",
+                                "value": "17"
+                            }
+                        ],
+                        "name": "com-annular",
+                        "avoidLabelOverlap": false,
+                        "label": {
+                            "normal": {
+                                "formatter": "{b}({d}%)",
+                                "show": false,
+                                "position": "center"
+                            },
+                            "emphasis": {
+                                "show": true,
+                                "textStyle": {
+                                    "fontSize": "20",
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        "labelLine": {
+                            "normal": {
+                                "show": false
+                            }
+                        },
+                        "type": "pie",
+                        "radius": [
+                            "50%",
+                            "70%"
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "formatter": "{b}: {c} ({d}%)",
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "item",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 8,
+            "id":8,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "一季度销售进度",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "77px",
+                "left": "1095px",
+                "width": "195px",
+                "height": "57px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 9,
+            "id":9,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\01",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "76px",
+                "left": "1289px",
+                "width": "68px",
+                "height": "56px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "agent": true,
+            "num": "89",
+            "icon": "md-icon-indicator",
+            "index": 10,
+            "id":10,
+            "type": "Indicator",
+            "title": "环比增长",
+            "url": "",
+            "frequency": 60,
+            "unit": "%",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "342px",
+                "left": "1234px",
+                "width": "123px",
+                "height": "99px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "agent": true,
+            "num": "2130",
+            "icon": "md-icon-indicator",
+            "index": 11,
+            "id":11,
+            "type": "Indicator",
+            "title": "一季度销售额",
+            "url": "",
+            "frequency": 60,
+            "unit": "万",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "342px",
+                "left": "1097px",
+                "width": "137px",
+                "height": "99px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "bar",
+            "icon": "md-icon-bar",
+            "chartType": "bar",
+            "index": 12,
+            "id":12,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "132px",
+                "left": "1370px",
+                "width": "251px",
+                "height": "214px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "城市",
+                "sortType": "unsort",
+                "showDataNum": 10,
+                "dataName": "示例数据",
+                "id": "com-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "销售额"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "北京",
+                        "上海",
+                        "广州",
+                        "深圳",
+                        "成都",
+                        "杭州",
+                        "西安",
+                        "济南",
+                        "武汉",
+                        "南京"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "销售额"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "35",
+                            "27",
+                            "23",
+                            "20",
+                            "17",
+                            "15",
+                            "14",
+                            "12",
+                            "9",
+                            "6"
+                        ],
+                        "name": "销售额",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#A8CFFF"
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "bar",
+            "icon": "md-icon-bar",
+            "chartType": "bar",
+            "index": 13,
+            "id":13,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "132px",
+                "left": "1635px",
+                "width": "264px",
+                "height": "213px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "销售品类",
+                "sortType": "unsort",
+                "showDataNum": 10,
+                "dataName": "示例数据",
+                "id": "com-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "销售额"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "母婴",
+                        "家电",
+                        "美妆",
+                        "家居",
+                        "其他",
+                        "玩具",
+                        "电子",
+                        "耳机",
+                        "服装",
+                        "书籍"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "销售额"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "35",
+                            "27",
+                            "23",
+                            "20",
+                            "17",
+                            "15",
+                            "14",
+                            "12",
+                            "9",
+                            "6"
+                        ],
+                        "name": "销售额",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#A8CFFF"
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 14,
+            "id":14,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\02",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "79px",
+                "left": "1559px",
+                "width": "62px",
+                "height": "57px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "left",
+            "icon": "md-icon-title",
+            "index": 15,
+            "id":15,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "城市销售排名",
+            "textIndent": "10px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "78px",
+                "left": "1370px",
+                "width": "191px",
+                "height": "57px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "agent": true,
+            "num": "母婴",
+            "icon": "md-icon-indicator",
+            "index": 16,
+            "id":16,
+            "type": "Indicator",
+            "title": "品类增长最快",
+            "url": "",
+            "frequency": 60,
+            "unit": "50.22%",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "346px",
+                "left": "1635px",
+                "width": "264px",
+                "height": "91px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "agent": true,
+            "num": "北京",
+            "icon": "md-icon-indicator",
+            "index": 17,
+            "id":17,
+            "type": "Indicator",
+            "title": "销售增长最快",
+            "url": "",
+            "frequency": 60,
+            "unit": "20.60%",
+            "nls": "statisticsIndicator",
+            "titleColor": "#ffffff",
+            "field": [],
+            "fontSize": "24px",
+            "style": {
+                "top": "346px",
+                "left": "1371px",
+                "width": "250px",
+                "height": "92px"
+            },
+            "dataSource": "static",
+            "fontColor": "#499BFF"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 18,
+            "id":18,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\03",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "78px",
+                "left": "1829px",
+                "width": "71px",
+                "height": "56px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 19,
+            "id":19,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "销售品类排名",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "79px",
+                "left": "1634px",
+                "width": "194px",
+                "height": "53px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 20,
+            "id":20,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\06",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "471px",
+                "left": "1822px",
+                "width": "76px",
+                "height": "63px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 21,
+            "id":21,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "用户类型占比",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "470px",
+                "left": "1635px",
+                "width": "187px",
+                "height": "64px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 22,
+            "id":22,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\05",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "468px",
+                "left": "1556px",
+                "width": "67px",
+                "height": "69px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 23,
+            "id":23,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "品类销售占比",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "468px",
+                "left": "1372px",
+                "width": "185px",
+                "height": "68px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "xbar",
+            "icon": "md-icon-xbar",
+            "chartType": "xbar",
+            "index": 24,
+            "id":24,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "526px",
+                "left": "1099px",
+                "width": "259px",
+                "height": "334px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "城市",
+                "sortType": "descending",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "com-bar",
+                "legendPosition": "close",
+                "YAxisField": [
+                    "销售额"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-bar.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "苏州",
+                        "南京",
+                        "武汉",
+                        "济南",
+                        "西安",
+                        "杭州",
+                        "成都",
+                        "深圳",
+                        "广州",
+                        "上海",
+                        "北京"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category"
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "top": 35,
+                    "left": 50,
+                    "bottom": 25
+                },
+                "legend": {
+                    "data": [
+                        "销售额"
+                    ],
+                    "show": false,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "5",
+                            "6",
+                            "9",
+                            "12",
+                            "14",
+                            "15",
+                            "17",
+                            "20",
+                            "23",
+                            "27",
+                            "35"
+                        ],
+                        "name": "销售额",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#A8CFFF"
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0)"
+                        },
+                        "type": "shadow"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "left",
+            "icon": "md-icon-title",
+            "index": 25,
+            "id":25,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "品类城市排名",
+            "textIndent": "10px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "467px",
+                "left": "1098px",
+                "width": "191px",
+                "height": "61px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 26,
+            "id":26,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "\\04",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "30px",
+            "style": {
+                "top": "467px",
+                "left": "1289px",
+                "width": "69px",
+                "height": "61px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "nls": "image",
+            "icon": "md-icon-image",
+            "index": 27,
+            "id":27,
+            "widgetFile": "other/Image",
+            "imageSrc": "images/template/logoImg.png",
+            "style": {
+                "top": "874px",
+                "left": "18px",
+                "width": "265px",
+                "height": "190px"
+            },
+            "type": "Other",
+            "title": "未标题-2_画板 1.png",
+            "settingFile": "other/Image",
+            "fullScreen": false
+        },
+        {
+            "defaultColor": {
+                "heighLight": "#A8CFFF",
+                "title": "#ffffff",
+                "body": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ]
+            },
+            "nls": "line",
+            "icon": "md-icon-line",
+            "chartType": "line",
+            "index": 28,
+            "id":28,
+            "widgetFile": "charts/Bar",
+            "style": {
+                "top": "874px",
+                "left": "287px",
+                "width": "795px",
+                "height": "190px"
+            },
+            "type": "Chart",
+            "title": "",
+            "settingFile": "charts/Bar",
+            "chartParam": {
+                "xAxisField": "年份",
+                "sortType": "unsort",
+                "showDataNum": "全部",
+                "dataName": "示例数据",
+                "id": "com-line",
+                "legendPosition": "bottom",
+                "YAxisField": [
+                    "增速"
+                ],
+                "dataSource": "data",
+                "url": "../../../utils/template/data/com-line.json",
+                "frequency": 5
+            },
+            "option": {
+                "backgroundColor": "",
+                "yAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "name": "",
+                    "show": true,
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "width": 0.3,
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 5,
+                    "scale": true,
+                    "nameLocation": "end",
+                    "type": "value",
+                    "nameTextStyle": {
+                        "padding": [
+                            0,
+                            0,
+                            5,
+                            0
+                        ]
+                    }
+                },
+                "xAxis": {
+                    "axisLabel": {
+                        "rotate": 0,
+                        "fontFamily": "MicrosoftYaHei"
+                    },
+                    "data": [
+                        "2018",
+                        "2017",
+                        "2016",
+                        "2015",
+                        "2014"
+                    ],
+                    "axisLine": {
+                        "lineStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "show": true,
+                    "name": "",
+                    "axisTick": {
+                        "alignWithLabel": true
+                    },
+                    "splitLine": {
+                        "lineStyle": {
+                            "color": "#E9E9E9",
+                            "type": "solid"
+                        },
+                        "show": false
+                    },
+                    "nameGap": 2,
+                    "nameLocation": "end",
+                    "type": "category",
+                    "boundaryGap": false
+                },
+                "color": [
+                    "#15D1F2",
+                    "#499BFF",
+                    "#2C61FF",
+                    "#243BCC",
+                    "#67A9FF"
+                ],
+                "grid": {
+                    "left": 50,
+                    "bottom": 70
+                },
+                "legend": {
+                    "data": [
+                        "增速"
+                    ],
+                    "bottom": 15,
+                    "show": true,
+                    "textStyle": {
+                        "color": "#ffffff"
+                    },
+                    "type": "scroll"
+                },
+                "series": [
+                    {
+                        "data": [
+                            "5",
+                            "4.3",
+                            "2.1",
+                            "2.9",
+                            "2"
+                        ],
+                        "name": "增速",
+                        "emphasis": {
+                            "itemStyle": {
+                                "color": "#A8CFFF"
+                            }
+                        },
+                        "type": "line"
+                    }
+                ],
+                "tooltip": {
+                    "axisPointer": {
+                        "shadowStyle": {
+                            "color": "rgba(231,243,252,0.4)"
+                        },
+                        "type": "line"
+                    },
+                    "trigger": "axis",
+                    "textStyle": {
+                        "align": "left"
+                    }
+                },
+                "textStyle": {
+                    "fontFamily": "Microsoft YaHei Light"
+                },
+                "title": {
+                    "padding": [
+                        5,
+                        0,
+                        0,
+                        20
+                    ],
+                    "x": "left",
+                    "text": "",
+                    "textStyle": {
+                        "fontFamily": "Microsoft YaHei Light",
+                        "color": "#ffffff",
+                        "fontWeight": "100"
+                    }
+                }
+            }
+        },
+        {
+            "color": "#ffffff",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 29,
+            "id":29,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "销售增速",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "18px",
+            "style": {
+                "top": "876px",
+                "left": "287px",
+                "width": "214px",
+                "height": "50px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 30,
+            "id":30,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "126万元",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "880px",
+                "left": "1297px",
+                "width": "187px",
+                "height": "85px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 31,
+            "id":31,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "企业经营指标2",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "979px",
+                "left": "1100px",
+                "width": "185px",
+                "height": "88px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "left",
+            "icon": "md-icon-title",
+            "index": 32,
+            "id":32,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "企业经营指标1",
+            "textIndent": "10px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "882px",
+                "left": "1100px",
+                "width": "186px",
+                "height": "86px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 33,
+            "id":33,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "143万元",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "978px",
+                "left": "1298px",
+                "width": "185px",
+                "height": "86px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 34,
+            "id":34,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "经营指标3",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "877px",
+                "left": "1510px",
+                "width": "195px",
+                "height": "85px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 35,
+            "id":35,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "123万元",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "879px",
+                "left": "1714px",
+                "width": "181px",
+                "height": "82px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 36,
+            "id":36,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "经营指标4",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "978px",
+                "left": "1510px",
+                "width": "195px",
+                "height": "85px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "normal"
+        },
+        {
+            "color": "rgba(62, 176, 231, 1)",
+            "textAlign": "center",
+            "icon": "md-icon-title",
+            "index": 37,
+            "id":37,
+            "widgetFile": "text/Text",
+            "type": "Text",
+            "title": "143万元",
+            "textIndent": "0px",
+            "fontFamily": "Microsoft YaHei",
+            "nls": "commonChar",
+            "fontSize": "25px",
+            "style": {
+                "top": "979px",
+                "left": "1714px",
+                "width": "179px",
+                "height": "83px"
+            },
+            "settingFile": "text/Text",
+            "fontWeight": "bolder"
+        }
+    ],
+    "baseSetting": {
+        "themeColor": "blackTheme",
+        "fillType": "color",
+        "background": "#2A2E34",
+        "width": "1920px",
+        "themeId": "themeA",
+        "height": "1080px"
+    },
+    "dataList": []
+}
